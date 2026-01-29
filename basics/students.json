@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "name": "Bhuvan",
+    "roll": "1vk23cs012",
+    "age": 20,
+    "subjects": {
+      "Python": 80.0
+    }
+  }
+]
