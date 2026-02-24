@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+        }
+
+        table {
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 200px;
+            padding: 5px;
+            background-color: #f2f2f2;
+            border: 1px solid #999;
+            font-size: 14px;
+            color: #000;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #0066cc;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #0066cc;
+            color: white;
+            font-size: 16px;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #999999;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" placeholder="Enter name"></td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td><input type="email" placeholder="Enter email"></td>
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td><input type="password"></td>
+        </tr>
+
+        <tr>
+            <td>Age</td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td>Skills</td>
+            <td>
+                <input type="checkbox"> HTML
+                <input type="checkbox"> CSS
+                <input type="checkbox"> JavaScript
+            </td>
+        </tr>
+
+        <tr>
+            <td>Course</td>
+            <td>
+                <select>
+                    <option>Select</option>
+                    <option>Web Development</option>
+                    <option>Cloud Computing</option>
+                    <option>Cyber Security</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td><textarea rows="3"></textarea></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

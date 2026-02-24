@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<style>
+table { margin: auto; }
+input, select, button { padding: 5px; }
+</style>
+</head>
+<body>
+
+<table border="1" cellpadding="10">
+<tr>
+<th colspan="2">Calculator</th>
+</tr>
+
+<tr>
+<td><input type="number" id="a" placeholder="Number 1"></td>
+<td><input type="number" id="b" placeholder="Number 2"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<select id="op">
+<option value="+">Sum</option>
+<option value="-">Difference</option>
+<option value="*">Product</option>
+<option value="/">Quotient</option>
+<option value="%">Remainder</option>
+<option value="pow">Power</option>
+<option value="sqrt">Square Root</option>
+<option value="sq">Square</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<button onclick="calc()">Calculate</button>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">Result: <span id="res"></span></td>
+</tr>
+</table>
+
+<script>
+function calc() {
+  let a = Number(document.getElementById("a").value);
+  let b = Number(document.getElementById("b").value);
+  let op = document.getElementById("op").value;
+  let r;
+
+  if (op === "+") r = a + b;
+  else if (op === "-") r = a - b;
+  else if (op === "*") r = a * b;
+  else if (op === "/") r = a / b;
+  else if (op === "%") r = a % b;
+  else if (op === "pow") r = Math.pow(a, b);
+  else if (op === "sqrt") r = Math.sqrt(a);
+  else if (op === "sq") r = a * a;
+
+  document.getElementById("res").innerHTML = r;
+}
+</script>
+
+</body>
+</html>

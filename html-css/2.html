@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: #444;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+
+        /* Row colors */
+        .monday { background-color: #f2f2f2; }
+        .tuesday { background-color: #e6f7ff; }
+        .wednesday { background-color: #f9fbe7; }
+        .thursday { background-color: #fff3e0; }
+        .friday { background-color: #fce4ec; }
+
+        /* Cell highlight colors */
+        .lab {
+            background-color: #90caf9;
+            font-weight: bold;
+        }
+
+        .elective {
+            background-color: #a5d6a7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2 align="center">Class Time Table</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+            <th>1:00 - 2:00</th>
+            <th>2:00 - 4:00</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr class="monday">
+            <th>Monday</th>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>C Programming</td>
+            <td rowspan="5">LUNCH</td>
+            <td class="elective">Elective</td>
+            <td class="lab" rowspan="2">C Lab</td>
+        </tr>
+
+        <tr class="tuesday">
+            <th>Tuesday</th>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td class="elective">Elective</td>
+        </tr>
+
+        <tr class="wednesday">
+            <th>Wednesday</th>
+            <td colspan="2" class="lab">Web Technology Lab</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td>Seminar</td>
+        </tr>
+
+        <tr class="thursday">
+            <th>Thursday</th>
+            <td>Physics</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td class="elective">Elective</td>
+            <td class="lab">WT Lab</td>
+        </tr>
+
+        <tr class="friday">
+            <th>Friday</th>
+            <td>Maths</td>
+            <td>Physics</td>
+            <td>C Programming</td>
+            <td>Library</td>
+            <td>Sports</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="7">Total Working Hours: 9:00 AM – 4:00 PM</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
